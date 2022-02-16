@@ -33,7 +33,7 @@ function getWeatherData() {
 
         let{latitude, longitude}=success.coords;
 
-        fetch('http://api.openweathermap.org/data/2.5/onecall?lat='+latitude+'&lon='+longitude+'&units=metric&appid=746dda1284c1af92cc0cec33558f0b9a').then(res=>res.json()).then(data => {
+        fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+latitude+'&lon='+longitude+'&units=metric&appid=746dda1284c1af92cc0cec33558f0b9a').then(res=>res.json()).then(data => {
             console.log(data);
             showWeatherData(data);
             //timezone.innerHTML= data.lat+'N'+data.lon+'E';
