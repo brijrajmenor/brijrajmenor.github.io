@@ -81,7 +81,7 @@ function showWeatherData(data){
                     <div class="other">
                         <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
                         <div class="temp">Night:${day.temp.night}&#176; C</div>
-                        <div class="temp">Day: 3${day.temp.day}&#176; C</div>
+                        <div class="temp">Day: ${day.temp.day}&#176; C</div>
                     </div>
                 </div>
                `
